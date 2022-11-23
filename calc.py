@@ -3,23 +3,23 @@ import tkinter
 # window
 
 window=tkinter.Tk()
-window.geometry('800x700')
-window.title('Calculator'.center(230))
+window.geometry('530x700')
+window.title('Calculator'.center(150))
 window.config(bg='black')
 
 # label
 
-lb=tkinter.Label(window,height=7,width=105,text='this is label',bg='white',anchor="se")
+lb=tkinter.Label(window,height=7,width=66,text='this is label',bg='white',anchor="se")
 lb.place(x=30,y=30,)
 
 
 # control buttons
 
-buttce=tkinter.Button(window,text='CE',bg='gray',width=10,height=4,activebackground='#62bce3')
+buttce=tkinter.Button(window,text='CE',bg='#fc475f',width=10,height=4,activebackground='red')
 buttce.place(x=30,y=180)
-buttc=tkinter.Button(window,text='C',bg='gray',width=10,height=4,activebackground='#62bce3')
+buttc=tkinter.Button(window,text='C',bg='#fc475f',width=10,height=4,activebackground='red')
 buttc.place(x=160,y=180)
-buttx=tkinter.Button(window,text='X',bg='gray',width=10,height=4,activebackground='#62bce3')
+buttx=tkinter.Button(window,text='X',bg='#fc475f',width=10,height=4,activebackground='red')
 buttx.place(x=290,y=180)
 
 # number buttons
@@ -49,15 +49,15 @@ butt_dot.place(x=160,y=580)
 
 # operator buttons
 
-butt_equal=tkinter.Button(window,text='=',bg='green',width=29,height=4,activebackground='white')
+butt_equal=tkinter.Button(window,text='=',bg='#5bf0a5',width=29,height=4,activebackground='white')
 butt_equal.place(x=290,y=580)
-butt_div=tkinter.Button(window,text='/',bg='gray',width=10,height=4,activebackground='#62bce3')
+butt_div=tkinter.Button(window,text='/',bg='#695cab',width=10,height=4,activebackground='green')
 butt_div.place(x=420,y=180)
-butt_mult=tkinter.Button(window,text='*',bg='gray',width=10,height=4,activebackground='#62bce3')
+butt_mult=tkinter.Button(window,text='*',bg='#695cab',width=10,height=4,activebackground='green')
 butt_mult.place(x=420,y=280)
-butt_sub=tkinter.Button(window,text='-',bg='gray',width=10,height=4,activebackground='#62bce3')
+butt_sub=tkinter.Button(window,text='-',bg='#695cab',width=10,height=4,activebackground='green')
 butt_sub.place(x=420,y=380)
-butt_add=tkinter.Button(window,text='9',bg='gray',width=10,height=4,activebackground='#62bce3')
+butt_add=tkinter.Button(window,text='+',bg='#695cab',width=10,height=4,activebackground='green')
 butt_add.place(x=420,y=480)
 
 window.mainloop()
