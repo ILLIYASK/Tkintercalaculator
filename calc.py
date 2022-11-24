@@ -175,19 +175,28 @@ def equal_button_clicked():
     if opvalue==1:
 
         resuil=float(oldvalue)+float(newvalue)
+        resuil=str(resuil)
         lb.config(text=resuil)
+        opvalue=0
+
 
     elif opvalue==2:
         resuil = float(oldvalue) - float(newvalue)
+        resuil = str(resuil)
         lb.config(text=resuil)
+        opvalue=0
 
     elif opvalue==3:
         resuil = float(oldvalue) * float(newvalue)
+        resuil = str(resuil)
         lb.config(text=resuil)
+        opvalue=0
 
     elif opvalue==4:
         resuil = float(oldvalue) / float(newvalue)
+        resuil = str(resuil)
         lb.config(text=resuil)
+        opvalue=0
     else:
         initial=lb['text']
         lb.config(text=initial)
