@@ -127,43 +127,70 @@ def add_but_clicked():
     global oldvalue
     global eqe
     global opvalue
+    check=len(lb['text'])
 
-    eqe=''
-    oldvalue=lb['text']
-    lb.config(text=eqe)
-    opvalue=1
+    if check==0:
+        eqe=''
+        lb.config(text=eqe)
+        opvalue=0
+    else:
+        eqe = ''
+        oldvalue = lb['text']
+        lb.config(text=eqe)
+        opvalue = 1
+
+
 
 
 def sub_but_clicked():
     global oldvalue
     global eqe
     global opvalue
+    check=len(lb['text'])
 
-    eqe=''
-    oldvalue=lb['text']
-    lb.config(text=eqe)
-    opvalue=2
+    if check == 0:
+        eqe = ''
+        lb.config(text=eqe)
+        opvalue = 0
+    else:
+        eqe = ''
+        oldvalue = lb['text']
+        lb.config(text=eqe)
+        opvalue = 2
+
 
 def mult_but_clicked():
     global oldvalue
     global eqe
     global opvalue
+    check = len(lb['text'])
 
-    eqe=''
-    oldvalue=lb['text']
-    lb.config(text=eqe)
-    opvalue=3
+    if check == 0:
+        eqe = ''
+        lb.config(text=eqe)
+        opvalue = 0
+    else:
+        eqe = ''
+        oldvalue = lb['text']
+        lb.config(text=eqe)
+        opvalue = 3
 
 
 def div_but_clicked():
     global oldvalue
     global opvalue
     global eqe
+    check = len(lb['text'])
 
-    eqe=''
-    oldvalue=lb['text']
-    lb.config(text=eqe)
-    opvalue=4
+    if check == 0:
+        eqe = ''
+        lb.config(text=eqe)
+        opvalue = 0
+    else:
+        eqe = ''
+        oldvalue = lb['text']
+        lb.config(text=eqe)
+        opvalue = 4
 
 
 def equal_button_clicked():
